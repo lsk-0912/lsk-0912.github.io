@@ -30,6 +30,7 @@ cursor.execute("SELECT * FROM users")  # 执行查询 cursor.execute("UPDATE pos
   - cursor.fetchmany(n)：获取**n 行数据**
   - cursor.fetchall()：获取**所有剩余数据**
 
+
 示例：
 
 cursor.execute("SELECT name, age FROM users") while True:    row = cursor.fetchone()  # 逐行获取，适合大数据量    if not row:        break    print(row)  # (张三, 25)
